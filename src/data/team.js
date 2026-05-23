@@ -1,0 +1,98 @@
+/**
+ * Team data — used by the profile cards on About.
+ * `department` is the team they lead/belong to (used as a small label, not a "class").
+ * `tenure` is a clean "years of experience" string.
+ * `highlights` are short professional credentials (certifications, programs, prior roles).
+ * `skills` are technical tags rendered as soft chips.
+ * `accent` is the hex color used for the avatar ring, focus tint, and link button.
+ */
+export const TEAM = [
+  {
+    name: 'Krishna Manohar',
+    handle: 'kmlal007',
+    pronouns: 'He/Him',
+    role: 'Chief Technology Officer',
+    department: 'Platform & Architecture',
+    company: 'Previously HCL Technologies · Tata Steel',
+    tenure: '16+ years in industry',
+    location: 'Kolkata, India',
+    bio: 'Sixteen years across architecture, distributed systems and enterprise Java. Leads the platform layer at SRM Eco Tech and sets the technical direction across products.',
+    highlights: [
+      'Senior Technical Manager at HCLTech',
+      'Ex-Project Lead, eTrans Solutions',
+      'Ex-IT Consultant, Tata Steel',
+    ],
+    skills: ['Software Architecture', 'Java', 'SQL', 'Code Review', 'Distributed Systems', 'Leadership'],
+    avatarSeed: 'Krishna-Manohar',
+    avatarStyle: 'personas',
+    accent: '#60A5FA',
+    github: 'https://github.com/kmlal007',
+    linkedin: 'https://www.linkedin.com/in/kmlal/',
+  },
+  {
+    name: 'Rupam Kumar',
+    handle: 'errupamkumar',
+    pronouns: 'He/Him',
+    role: 'Head of Data Engineering',
+    department: 'Data & Analytics',
+    company: 'Lead Engineer at HCLTech',
+    tenure: '4 years in data engineering',
+    location: 'Noida, India',
+    bio: 'Power BI engineer turned data lead. Owns the lakehouse and BI track at SRM Eco Tech — turning raw operational data into decisions customers can ship on.',
+    highlights: [
+      'Microsoft PL-300 certified',
+      'Azure DP-600, DP-900, AZ-900 certified',
+      'B.Tech CSE, Govt. Engineering College Bikaner (9.0 CGPA)',
+    ],
+    skills: ['Power BI', 'DAX', 'SQL', 'Python', 'Docker', 'Azure'],
+    avatarSeed: 'Rupam-Kumar',
+    avatarStyle: 'personas',
+    accent: '#60A5FA',
+    github: 'https://github.com/errupamkumar',
+    linkedin: 'https://www.linkedin.com/in/rupam-kumar/',
+  },
+  {
+    name: 'Sanjoy Chattopadhyay',
+    handle: 'Sanjoy-Chattopadhay',
+    pronouns: 'He/Him',
+    role: 'Engineering Lead',
+    department: 'Product Engineering',
+    company: 'MTech CS @ NIT Durgapur · Previously HCLTech',
+    tenure: '3 years engineering',
+    location: 'Durgapur, India',
+    bio: 'SDE turned researcher. Building the Mission-Capable Vehicle Prediction System for the Indian Army and leading product engineering at SRM Eco Tech.',
+    highlights: [
+      'Training and Placement Representative, NIT Durgapur',
+      'Technical Engineer Intern, Indian Army',
+      'Ex-SDE / SDET, HCLTech',
+    ],
+    skills: ['Java', 'JBoss', 'SDET', 'ML Research', 'React', 'Predictive Systems'],
+    avatarSeed: 'Sanjoy-Chattopadhyay',
+    avatarStyle: 'personas',
+    accent: '#A78BFA',
+    github: 'https://github.com/Sanjoy-Chattopadhay',
+    linkedin: 'https://www.linkedin.com/in/sanjoy-chattopadhyay-390b3a1a6/',
+  },
+  {
+    name: 'Shivesh Neeraj',
+    handle: 'shivesh-neeraj',
+    pronouns: 'He/Him',
+    role: 'Chief Architect',
+    department: 'Platform & Architecture',
+    company: 'Previously HCL Technologies · Tata Steel',
+    tenure: '16+ years in industry',
+    location: 'Kolkata, India',
+    bio: 'Sixteen years across architecture, distributed systems and enterprise Java. Co-leads the platform layer alongside the CTO and owns the long-term technical roadmap.',
+    highlights: [
+      'Senior Technical Manager at HCLTech',
+      'Ex-Project Lead, eTrans Solutions',
+      'Ex-IT Consultant, Tata Steel',
+    ],
+    skills: ['Software Architecture', 'Java', 'SQL', 'Code Review', 'Distributed Systems', 'Leadership'],
+    avatarSeed: 'Shivesh-Neeraj',
+    avatarStyle: 'personas',
+    accent: '#F97316',
+    github: 'https://github.com/kmlal007',
+    linkedin: 'https://www.linkedin.com/in/kmlal/',
+  },
+];
