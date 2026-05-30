@@ -93,15 +93,6 @@ const DOMAINS = [
     highlight: 'Enterprise IAM overhaul — migrated 14K users to OIDC SSO with zero-password policy in 4 weeks.',
   },
   {
-    id: 'epr-govtech',
-    Icon: Leaf,
-    title: 'EPR & GovTech Compliance',
-    body: 'Software-led EPR compliance — CPCB portal automation, credit reconciliation, quarterly filings, and producer-PRO dashboards for Plastic, E-Waste, Battery & Tyre waste.',
-    tags: ['CPCB Portal', 'PWM', 'E-Waste', 'BWM', 'Compliance'],
-    accent: '#8B5CF6',
-    highlight: 'Zero CPCB rejections across 4 filing cycles. 80% reduction in reconciliation effort.',
-  },
-  {
     id: 'mobile',
     Icon: Smartphone,
     title: 'Mobile App Development',

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Loader2, Send, CheckCircle2, AlertCircle, Mail } from 'lucide-react';
 import { apiBase } from '../lib/api.js';
 
-const TOPICS = ['General enquiry', 'Schedule a demo', 'EPR compliance', 'Smart-Truck GPS', 'Data / ML engagement', 'Careers'];
+const TOPICS = ['General enquiry', 'Schedule a demo', 'Smart-Truck GPS', 'Data / ML engagement', 'Careers'];
 const INBOX = 'info@srmecotech.com';
 
 /** Build a mailto: link from the form data so submissions still work even if

@@ -1,4 +1,4 @@
-import { Code2, Cpu, Leaf, ShieldCheck, BarChart3, Workflow, Users, Sparkles } from 'lucide-react';
+import { Code2, Cpu, ShieldCheck, BarChart3, Workflow, Users, Sparkles } from 'lucide-react';
 import Reveal from './Reveal.jsx';
 import ScrollTell from './ScrollTell.jsx';
 import MediaPanel from './MediaPanel.jsx';
@@ -75,18 +75,18 @@ export default function TellSection({
 export const WHO_DEFAULTS = {
   eyebrow: 'Who we are',
   title: 'A technology company with sustainability in its DNA.',
-  bodyText: `At SRM ECO TECH, we are a forward-thinking technology company committed to transforming businesses through smart IT solutions and sustainable compliance services. With a strong foundation in custom software development, automation, and enterprise IT systems, we empower organizations to achieve efficiency, scalability, and innovation.
+  bodyText: `At SRM ECO TECH, we are a forward-thinking technology company committed to transforming businesses through smart IT solutions. With a strong foundation in custom software development, automation, and enterprise IT systems, we empower organizations to achieve efficiency, scalability, and innovation.
 
-While technology is our core, we also proudly serve as trusted partners in EPR (Extended Producer Responsibility) compliance and environmental consultancy, helping industries navigate regulatory frameworks with ease and responsibility.`,
+From AI-driven analytics to fleet telematics and data engineering, we build platforms our customers run their businesses on.`,
   pillars: [
     { icon: <Code2 size={16} />,       label: 'Smart IT',              sub: 'Software, automation, AI/ML' },
-    { icon: <Leaf size={16} />,        label: 'EPR Compliance',        sub: 'CPCB-aligned plastic waste mgmt' },
+    { icon: <Cpu size={16} />,         label: 'AI / ML platform',      sub: '60+ models in prod' },
     { icon: <ShieldCheck size={16} />, label: 'Enterprise-grade',      sub: 'SOC2-aligned, audit-ready' },
     { icon: <Users size={16} />,       label: 'Long-haul partner',     sub: '4+ year avg engagement' },
   ],
   mediaChips: [
-    { icon: <Leaf size={12} />, label: 'Sustainability first' },
     { icon: <Sparkles size={12} />, label: 'AI-native' },
+    { icon: <Code2 size={12} />, label: 'Custom builds' },
   ],
 };
 
@@ -95,14 +95,12 @@ export const WHAT_DEFAULTS = {
   title: 'We build digital ecosystems — not just software.',
   bodyText: `At SRM ECO TECH, we bridge the gap between business needs and digital innovation. Whether you are a growing startup, a mid-size enterprise, or an established industry player, we provide tailored software solutions that solve real-world challenges.
 
-We don't just develop software — we build digital ecosystems that streamline operations, improve decision-making, and enable future growth.
-
-Alongside our IT services, our experienced EPR team supports manufacturers, importers, and brand owners in meeting their plastic waste management obligations under CPCB guidelines with accuracy and peace of mind.`,
+We don't just develop software — we build digital ecosystems that streamline operations, improve decision-making, and enable future growth.`,
   pillars: [
     { icon: <Workflow size={16} />,    label: 'Workflow automation',  sub: 'No-code orchestration' },
     { icon: <BarChart3 size={16} />,   label: 'Data + analytics',     sub: 'Lakehouse, BI, ML' },
     { icon: <Cpu size={16} />,         label: 'AI / ML platform',     sub: '60+ models in prod' },
-    { icon: <Leaf size={16} />,        label: 'EPR support team',     sub: 'CPCB filings, end-to-end' },
+    { icon: <ShieldCheck size={16} />, label: 'Enterprise-grade',     sub: 'SOC2-aligned, audit-ready' },
   ],
   mediaChips: [
     { icon: <BarChart3 size={12} />, label: 'Live dashboards' },

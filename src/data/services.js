@@ -49,13 +49,6 @@ export const SERVICES = [
     bullets: ['OIDC / SAML SSO', 'Vault / KMS / Secrets Manager', 'DAST + SAST in CI', 'SOC2-aligned audit logging'],
   },
   {
-    id: 'epr',
-    title: 'EPR Compliance Tech',
-    icon: 'Leaf',
-    description: 'A software-led approach to Extended Producer Responsibility — CPCB filings, credit reconciliation, and producer-PRO dashboards in one platform.',
-    bullets: ['CPCB portal automation', 'EPR credit reconciliation', 'Producer / PRO dashboards', 'Audit-ready trail'],
-  },
-  {
     id: 'java',
     title: 'Enterprise Java & Spring Boot',
     icon: 'Server',

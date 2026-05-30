@@ -1,12 +1,11 @@
 import { useEffect, useRef } from 'react';
-import { Truck, Brain, Database, Workflow, Leaf, ShieldCheck, BarChart3, Cpu } from 'lucide-react';
+import { Truck, Brain, Workflow, ShieldCheck, BarChart3 } from 'lucide-react';
 
 const CARDS = [
   { Icon: Truck,       label: 'neXgen TMS',         meta: 'Fleet · Live GPS',     color: 'var(--brand-primary)',   x: -120, y: -160, delay: 0    },
   { Icon: Brain,       label: 'AI Studio',          meta: 'AutoML · Models',      color: 'var(--brand-secondary)', x:  130, y: -180, delay: 120  },
   { Icon: Workflow,    label: 'ProcessFlow',        meta: 'No-code · SLAs',       color: 'var(--brand-accent)',    x: -180, y:   30, delay: 240  },
   { Icon: BarChart3,   label: 'Analytics',          meta: 'BI · Lakehouse',       color: 'var(--brand-primary)',   x:  170, y:   40, delay: 360  },
-  { Icon: Leaf,        label: 'EPR Suite',          meta: 'CPCB · Compliance',    color: 'var(--brand-accent)',    x:  -90, y:  180, delay: 480  },
   { Icon: ShieldCheck, label: 'neXgen IdP',         meta: 'Auth · Audit',         color: 'var(--brand-secondary)', x:  120, y:  200, delay: 600  },
 ];
 

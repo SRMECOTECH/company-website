@@ -1,7 +1,15 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
-import ProductShowcase from './ProductShowcase.jsx';
+import HeroVisual from './HeroVisual.jsx';
+import Typewriter from './Typewriter.jsx';
 import { googleCalendarUrl } from '../lib/calendar.js';
+
+const ROTATING_PHRASES = [
+  "what's next.",
+  "AI platforms.",
+  "data pipelines.",
+  "fleet systems.",
+];
 
 export default function Hero() {
   return (
@@ -15,11 +23,11 @@ export default function Hero() {
           <span className="eyebrow"><Sparkles size={12} /> SRM ECO TECH | Technology · Sustainability · Scale</span>
 
           <h1 className="display-xl mt-5 hero-pro-h1">
-            <span className="word" style={{ animationDelay: '0ms' }}>We engineer</span>{' '}
-            <span className="word text-flow" style={{ animationDelay: '90ms' }}>what's next</span>{' '}
-            <span className="word" style={{ animationDelay: '200ms' }}>from code</span>{' '}
-            <span className="word" style={{ animationDelay: '310ms' }}>to compliance,</span>{' '}
-            <span className="word" style={{ animationDelay: '420ms' }}>end to end.</span>
+            <span className="hero-line word" style={{ animationDelay: '0ms' }}>We engineer</span>
+            <span className="hero-line hero-typewriter-line">
+              <Typewriter phrases={ROTATING_PHRASES} />
+            </span>
+            <span className="hero-line word" style={{ animationDelay: '200ms' }}>from code to compliance.</span>
           </h1>
 
           <p className="body-lg mt-6 max-w-xl word hero-pro-sub" style={{ animationDelay: '550ms' }}>
@@ -28,7 +36,7 @@ export default function Hero() {
             data, and keep India compliant.
           </p>
 
-          <div className="flex gap-3 mt-8 word hero-pro-cta" style={{ animationDelay: '650ms', flexWrap: 'wrap' }}>
+          <div className="flex gap-3 mt-8 word hero-pro-cta" style={{ animationDelay: '600ms', flexWrap: 'wrap' }}>
             <Link to="/products" className="btn btn-primary btn-lg">
               Explore neXgen Products <ArrowRight size={16} />
             </Link>
@@ -57,7 +65,7 @@ export default function Hero() {
         </div>
 
         <div className="hero-pro-visual">
-          <ProductShowcase />
+          <HeroVisual />
         </div>
       </div>
     </section>

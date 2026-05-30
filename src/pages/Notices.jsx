@@ -1,43 +1,23 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, FileText, AlertCircle, Megaphone, Calendar, Download } from 'lucide-react';
+import { ArrowRight, AlertCircle, Megaphone, Calendar } from 'lucide-react';
 import CTABanner from '../components/CTABanner.jsx';
 import Reveal, { Stagger } from '../components/Reveal.jsx';
 
 const CATEGORY_META = {
-  Regulatory: { Icon: AlertCircle, accent: '#F97316' },
-  Update:     { Icon: Megaphone,   accent: '#60A5FA' },
-  Filing:     { Icon: FileText,    accent: '#60A5FA' },
-  Public:     { Icon: Calendar,    accent: '#A78BFA' },
+  Update:  { Icon: Megaphone,   accent: '#60A5FA' },
+  Release: { Icon: AlertCircle, accent: '#F97316' },
+  Public:  { Icon: Calendar,    accent: '#A78BFA' },
 };
 
 const NOTICES = [
   {
-    id: 'cpcb-pwm-2025',
-    date: '2025-04-12',
-    category: 'Regulatory',
-    title: 'CPCB releases revised EPR targets for Plastic Waste Management (FY 2025-26)',
+    id: 'nexgen-tms-2-1',
+    date: '2025-03-15',
+    category: 'Release',
+    title: 'neXgen TMS 2.1 — release notes',
     summary:
-      'The Central Pollution Control Board has issued updated category-wise plastic recycling targets for Producers, Importers and Brand Owners. New thresholds apply from April 2025.',
-    tags: ['CPCB', 'PWM', 'EPR'],
-    href: 'https://cpcb.nic.in',
-  },
-  {
-    id: 'q4-fy25-filing',
-    date: '2025-03-31',
-    category: 'Filing',
-    title: 'Q4 FY 2024-25 EPR returns due on 30 June 2025',
-    summary:
-      'Producers must file their quarterly return on the CPCB EPR portal. Reach out to our EPR desk for documentation support and filing assistance.',
-    tags: ['Filing', 'Quarterly'],
-  },
-  {
-    id: 'battery-rules-2024',
-    date: '2025-02-08',
-    category: 'Regulatory',
-    title: 'Battery Waste Management Rules — amended notification',
-    summary:
-      'The Ministry of Environment has notified an amendment that brings additional categories of portable batteries under the EPR framework. We have begun outreach to affected clients.',
-    tags: ['BWM', 'Amendment'],
+      'Live trip replay, faster anomaly alerts, and a redesigned driver scorecard. Available to all neXgen TMS customers from this week.',
+    tags: ['neXgen', 'Release'],
   },
   {
     id: 'newsletter-mar25',
@@ -45,7 +25,7 @@ const NOTICES = [
     category: 'Update',
     title: 'SRM ECO TECH monthly digest — March 2025',
     summary:
-      "This month: a deep-dive on E-Waste credit reconciliation, the neXgen TMS 2.1 release notes, and what's changing in the CPCB EPR portal next quarter.",
+      "This month: a deep-dive on lakehouse cost economics, the neXgen TMS 2.1 release notes, and what we've been building on the AI Studio.",
     tags: ['Newsletter', 'Digest'],
   },
   {
@@ -54,7 +34,7 @@ const NOTICES = [
     category: 'Public',
     title: 'Office observance — 1 May 2025',
     summary:
-      'Our Delhi office will remain closed on 1st May 2025 in observance of International Labour Day. Urgent compliance queries can still reach us at info@srmecotech.com.',
+      'Our Delhi office will remain closed on 1st May 2025 in observance of International Labour Day. Urgent queries can still reach us at info@srmecotech.com.',
     tags: ['Holiday'],
   },
 ];
@@ -73,14 +53,13 @@ export default function Notices() {
           <Reveal><span className="eyebrow">Notice Board</span></Reveal>
           <Reveal delay={80}>
             <h1 className="display-lg mt-5">
-              Regulatory updates, filings & <span className="text-flow">official communications.</span>
+              Product releases & <span className="text-flow">official communications.</span>
             </h1>
           </Reveal>
           <Reveal delay={160}>
             <p className="body-lg mt-5">
-              The latest from the CPCB, MoEFCC and state pollution control boards — alongside our own
-              client notices and product releases. Bookmark this page or subscribe to our newsletter
-              so nothing slips past you.
+              Release notes from the neXgen Suite, monthly digests, and client notices.
+              Bookmark this page or subscribe to our newsletter so nothing slips past you.
             </p>
           </Reveal>
         </div>
@@ -122,12 +101,7 @@ export default function Notices() {
                         </a>
                       ) : (
                         <Link to="/about#contact" className="notice-link">
-                          Ask the EPR desk <ArrowRight size={14} />
-                        </Link>
-                      )}
-                      {n.category === 'Filing' && (
-                        <Link to="/epr" className="notice-link notice-link-ghost">
-                          <Download size={14} /> Filing checklist
+                          Contact us <ArrowRight size={14} />
                         </Link>
                       )}
                     </div>

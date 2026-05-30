@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SRM ECO TECH — Vite + React + Plain CSS
 
 A **lean** version of the SRM ECO TECH marketing site: pure HTML + CSS + JS feel, built on Vite + React + react-router. No Tailwind, no Next.js, no Framer Motion — just a single CSS file with design tokens, hand-rolled keyframes, and IntersectionObserver-driven scroll reveals.
@@ -169,3 +170,6 @@ Deploy `dist/` to any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pag
 | Email branding | `server/server.js` — `shell()` function |
 
 Built with care · © SRM ECO TECH PVT LTD
+=======
+# company-website
+>>>>>>> dc0572e8c8e83d0c6bc6453920cc436f43a82196

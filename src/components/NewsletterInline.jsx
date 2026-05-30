@@ -33,7 +33,7 @@ export default function NewsletterInline() {
         <span className="eyebrow"><Mail size={12} /> Newsletter</span>
         <h3 className="display-sm mt-3">Stay ahead of the curve.</h3>
         <p className="body-md mt-2 max-w-xl">
-          Get monthly product drops, EPR regulatory updates, and engineering deep-dives delivered straight to
+          Get monthly product drops and engineering deep-dives delivered straight to
           your inbox. No spam — unsubscribe any time.
         </p>
       </div>

@@ -110,7 +110,7 @@ function tplContactAck(name) {
     `<p>Your message has reached the SRM ECO TECH inbox. A senior engineer or compliance lead will read it
      personally and reply within one business day.</p>
      <p>In the meantime, feel free to browse our case studies — see how we built our Smart-Truck GPS,
-     OSRM snap-to-road, ML/DL platform, and EPR compliance portal.</p>`,
+     OSRM snap-to-road, and ML/DL platform.</p>`,
     'Browse case studies',
     `${process.env.SITE_URL || 'https://www.srmecotech.com'}/projects`
   );
@@ -122,7 +122,6 @@ function tplWelcome() {
     `<p>You&rsquo;re subscribed. Once a month, we&rsquo;ll send you:</p>
      <ul style="padding-left:20px;line-height:1.7;">
        <li>Product drops from the neXgen Suite</li>
-       <li>EPR &amp; CPCB regulatory updates that affect Indian producers</li>
        <li>Engineering deep-dives — GPS, OSRM, data lakes, ML/DL</li>
      </ul>
      <p style="color:${MUTED};font-size:13px;">You can unsubscribe any time by replying with &ldquo;unsubscribe&rdquo;.</p>`,

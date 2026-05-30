@@ -114,20 +114,6 @@ function ServiceArt({ id }) {
             strokeDasharray="60" style={{ animation: 'bento-draw 2.4s ease-out infinite' }} />
         </svg>
       );
-    case 'epr':
-      return (
-        <svg className="bento-art" viewBox="0 0 200 140" aria-hidden="true">
-          {/* recycle triangle */}
-          <g style={{ animation: 'bento-spin 14s linear infinite', transformOrigin: '100px 70px' }}>
-            {[0, 120, 240].map((rot) => (
-              <path key={rot}
-                d="M 100 30 L 130 80 L 110 80 L 110 95 L 90 95 L 90 80 L 70 80 Z"
-                fill="currentColor" opacity="0.35"
-                transform={`rotate(${rot} 100 70)`} />
-            ))}
-          </g>
-        </svg>
-      );
     case 'java':
       return (
         <svg className="bento-art" viewBox="0 0 200 140" aria-hidden="true">

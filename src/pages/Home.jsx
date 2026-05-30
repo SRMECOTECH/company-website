@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle2, Quote } from 'lucide-react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import Hero from '../components/Hero.jsx';
 import MarqueeLogos from '../components/MarqueeLogos.jsx';
 import CTABanner from '../components/CTABanner.jsx';
@@ -7,10 +7,10 @@ import Reveal, { Stagger } from '../components/Reveal.jsx';
 import Counter from '../components/Counter.jsx';
 import Icon from '../components/Icon.jsx';
 import TellSection, { WHO_DEFAULTS, WHAT_DEFAULTS } from '../components/TellSection.jsx';
+import Testimonials from '../components/Testimonials.jsx';
 import { SERVICES } from '../data/services.js';
 import { PRODUCTS } from '../data/products.js';
 import { PROJECTS } from '../data/projects.js';
-import { TESTIMONIALS } from '../data/clients.js';
 
 // To swap the animated illustration for a real photo / mp4, drop a file at
 //   public/images/who-we-are.jpg  /  public/images/what-we-do.jpg
@@ -25,7 +25,7 @@ export default function Home() {
 
       {/* Trust strip */}
       <section className="bordered" style={{ background: 'var(--bg-surface)' }}>
-        <div className="container flex items-center gap-6" style={{ paddingBlock: 24, flexWrap: 'wrap' }}>
+        <div className="container flex items-center gap-6" style={{ paddingBlock: 36, flexWrap: 'wrap' }}>
           <p className="body-sm" style={{ textTransform: 'uppercase', letterSpacing: '0.16em', flexShrink: 0 }}>
             Trusted by teams shipping into production
           </p>
@@ -34,6 +34,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials — placed right after the trust strip */}
+      <Testimonials />
 
       {/* Services */}
       <section className="section">
@@ -167,27 +170,6 @@ export default function Home() {
                   </span>
                 </article>
               </Link>
-            ))}
-          </Stagger>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="section">
-        <div className="container">
-          <Reveal><span className="eyebrow">What customers say</span></Reveal>
-          <Reveal delay={80}><h2 className="display-md mt-4 max-w-3xl">A team that ships — and stays for the next thing.</h2></Reveal>
-
-          <Stagger className="grid-3 mt-12">
-            {TESTIMONIALS.map((t, i) => (
-              <blockquote key={i} className="card h-full" style={{ display: 'flex', flexDirection: 'column', gap: 16, margin: 0 }}>
-                <Quote size={22} style={{ color: 'var(--brand-primary)' }} />
-                <p className="text-ink" style={{ fontSize: 15.5, lineHeight: 1.6 }}>“{t.quote}”</p>
-                <footer style={{ marginTop: 'auto' }}>
-                  <p style={{ fontWeight: 700, fontSize: 14 }}>{t.name}</p>
-                  <p className="body-sm" style={{ marginTop: 2 }}>{t.role}</p>
-                </footer>
-              </blockquote>
             ))}
           </Stagger>
         </div>

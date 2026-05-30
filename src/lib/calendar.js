@@ -6,7 +6,7 @@
  */
 export function googleCalendarUrl({
   title = 'Intro call · SRM ECO TECH',
-  details = "Initial discovery call with the SRM ECO TECH team.\n\nWe'll spend 30 minutes understanding your context — software, data, GPS or EPR — and outline how we can help.",
+  details = "Initial discovery call with the SRM ECO TECH team.\n\nWe'll spend 30 minutes understanding your context — software, data or GPS — and outline how we can help.",
   guests = ['info@srmecotech.com'],
   location = 'Google Meet (link to be added)',
   startISO,            // optional ISO start

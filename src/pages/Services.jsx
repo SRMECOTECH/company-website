@@ -17,7 +17,7 @@ const STATS = [
 
 const INDUSTRY_CARDS = [
   { Icon: Truck,   title: 'Logistics & Mobility', body: 'Smart-truck telematics, OSRM-based routing, fleet analytics, e-POD and driver scoring.' },
-  { Icon: Factory, title: 'Manufacturing & FMCG', body: 'EPR compliance, vendor portals, plant telemetry, predictive maintenance.' },
+  { Icon: Factory, title: 'Manufacturing & FMCG', body: 'Vendor portals, plant telemetry, predictive maintenance, audit-ready process automation.' },
   { Icon: Users2,  title: 'BFSI & Services',      body: 'Document AI for AP/AR, KYC pipelines, fraud detection ML, customer-facing chatbots.' },
 ];
 
